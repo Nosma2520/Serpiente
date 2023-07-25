@@ -15,6 +15,7 @@ import java.awt.event.KeyEvent;
 import javax.swing.ImageIcon;
 import javax.swing.JPanel;
 import javax.swing.Timer;
+import java.io.File;
 
 public class Board extends JPanel implements ActionListener {
 
@@ -62,13 +63,16 @@ public class Board extends JPanel implements ActionListener {
 
     private void loadImages() {
 
-        ImageIcon iid = new ImageIcon("C:\\Users\\thandi.buthelezi\\eclipse-workspace\\Personal Practice\\src\\games\\dot.png");
+        File ballFile = new File("img/dot.png");
+        ImageIcon iid = new ImageIcon(ballFile.getAbsolutePath());
         ball = iid.getImage();
-
-        ImageIcon iia = new ImageIcon("C:\\Users\\thandi.buthelezi\\eclipse-workspace\\Personal Practice\\src\\games\\apple.png");
+        
+        File appleFile = new File("img/apple.png");
+        ImageIcon iia = new ImageIcon(appleFile.getAbsolutePath());
         apple = iia.getImage();
 
-        ImageIcon iih = new ImageIcon("C:\\Users\\thandi.buthelezi\\eclipse-workspace\\Personal Practice\\src\\games\\head.png");
+        File headFile = new File("img/head.png");
+        ImageIcon iih = new ImageIcon(headFile.getAbsolutePath());
         head = iih.getImage();
     }
 
