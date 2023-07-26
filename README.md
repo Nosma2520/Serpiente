@@ -19,11 +19,9 @@ To run Serpiente, you need to have the following installed:
 
 2. Compile the source files:
 ``` bash
-javac Snake.java
+javac Snake.java Board.java
 ```
-``` bash
-javac Board.java
-```
+
 3. Run the game:
 ``` bash
 java Snake
